@@ -1,0 +1,466 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500");
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  max-width: 100%;
+}
+
+.sidebar {
+  position: fixed;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #deb887;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  z-index: 2;
+}
+.sidebar header {
+  font-size: 22px;
+  color: white;
+  line-height: 70px;
+  text-align: center;
+  background: #deb887;
+  user-select: none;
+}
+.sidebar ul a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #deb887;
+  border-top: 1px solid #deb887;
+  transition: 0.4s;
+}
+ul li:hover a {
+  padding-left: 50px;
+}
+.sidebar ul a i {
+  margin-right: 16px;
+}
+#check {
+  display: none;
+}
+label #btn,
+label #cancel {
+  position: absolute;
+  background: #deb887;
+  border-radius: 3px;
+  cursor: pointer;
+}
+label #btn {
+  left: 40px;
+  top: 17px;
+  font-size: 15px;
+  color: white;
+  padding: 6px 12px;
+  transition: all 0.5s;
+}
+label #cancel {
+  z-index: 1111;
+  left: -195px;
+  top: 17px;
+  font-size: 30px;
+  color: #0a5275;
+  padding: 4px 9px;
+  transition: all 0.5s ease;
+}
+#check:checked ~ .sidebar {
+  left: 0;
+}
+#check:checked ~ label #btn {
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+#check:checked ~ label #cancel {
+  left: 195px;
+}
+#check:checked ~ section {
+  margin-left: 250px;
+}
+/* CSS untuk submenu */
+.sidebar ul .submenu {
+  display: none;
+  background-color: #deb887;
+  top: 0;
+  left: 100%;
+  width: 200px;
+  z-index: 1;
+}
+
+.sidebar ul .submenu li {
+  border-top: none;
+}
+
+.sidebar ul .submenu li a {
+  padding-left: 40px;
+  border-bottom: none;
+}
+
+.sidebar ul li:hover .submenu {
+  display: block;
+}
+
+section {
+  background: url(bg.jpeg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  transition: all 0.5s;
+}
+
+.header {
+  padding: 10px 0;
+}
+
+/* CSS untuk menu */
+.menu {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  list-style-type: none;
+  margin-left: 16rem;
+}
+
+/* CSS untuk setiap elemen menu */
+.menu li {
+  margin-right: 20px;
+}
+
+/* CSS untuk search box */
+.search-box {
+  align-items: center;
+  background-color: #deb887;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.search-box input[type="text"] {
+  border: none;
+  background-color: transparent;
+  color: white;
+  padding: 5px;
+  width: 250px;
+}
+
+.search-box button {
+  background: transparent;
+  border: none;
+  color: #deb887;
+  cursor: pointer;
+}
+
+.search-box button i.fa-search {
+  color: black;
+  font-size: 13px;
+  transition: color 0.3s;
+}
+
+.search-box button:hover i.fa-search {
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to top, white 25%, #deb887);
+  width: 201px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 0 10px; /* Menambahkan padding untuk merapikan tampilan */
+}
+
+.logo img {
+  margin-right: 10px; /* Menambahkan margin kanan antara gambar dan teks */
+  width: 30px;
+  height: 30px; /* Sesuaikan ukuran gambar dengan tinggi logo */
+}
+
+.logo1 {
+  display: flex;
+  align-items: center;
+  background: #deb887;
+  width: 80 px;
+  height: 30px;
+  border-radius: 15px;
+  padding: 0 10px;
+}
+
+.logo h1 {
+  margin: 0;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  margin-left: 17rem;
+  margin-top: 2rem;
+}
+
+.container img {
+  height: 450px;
+  width: 300px;
+}
+.isi {
+  margin-left: 1rem;
+}
+.arrow {
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+  width: 480px;
+}
+.arrow a {
+  font-size: 25px;
+}
+.arrow h4 {
+  margin-right: 10rem;
+}
+.sinopsis {
+  margin-right: 13rem;
+  text-align: justify;
+  margin-bottom: 2rem;
+}
+.sinopsis h5,
+h4 {
+  padding-top: 5px;
+}
+
+.icons a {
+  margin-left: 1rem;
+}
+.star {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+.footerlg {
+  display: flex;
+  margin-left: 15.1rem;
+  margin-top: 1rem;
+  font-size: 15px;
+  justify-content: space-between;
+  width: 335px;
+  align-items: center;
+}
+.footerlg h4{
+  margin-left: 1.5rem;
+}
+.lgbotom {
+  margin-left: 14rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  width: 348px;
+}
+.lgbotom a {
+  padding: 7px 15px;
+  margin-left: 4.1rem;
+  border-radius: 20px;
+  background: #deb887;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.containers {
+  margin-left: 17rem;
+  margin-top: 1rem;
+  background: #fff;
+  padding: 20px;
+  width: 500px;
+  box-shadow: 0 0 5px #000;
+}
+.head {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.text {
+  margin: 10px 0 ;
+  font-size: 0.9em;
+}
+.commentbox {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+.commentbox img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 20px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.content {
+  width: 100%;
+}
+.user {
+  border: none;
+  outline: none;
+  margin: 5px 0;
+  color: #808080;
+  margin-left: 20px;
+  padding: 10px;
+}
+.commentinput .usercomment{
+  border: none;
+  padding: 10px;
+  padding-left: 0;
+  outline: none;
+  border-bottom: 2px solid blue;
+  margin-bottom: 10px;
+  width: 95%;;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #808080;
+}
+
+.buttons button{
+  padding: 5px 10px;
+  background: lightgray;
+  color: #808080;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  cursor: pointer;;
+}
+.buttons button.abled {
+  background: blue;
+  color: #fff;
+}
+
+.policy {
+  margin: 20px 0 ;
+  font-size: 0.8em;
+  color: #808080;;
+}
+
+.policy a {
+  text-decoration: none;
+  color: blue;
+}
+
+.notify {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+.notify {
+  margin-right: 5px;
+}
+
+.parents {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.parents h1 {
+  font-size: 0.9em;
+}
+
+.parents p {
+  font-size: 1em;
+}
+.parents img {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.engagements {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.engagements img {
+  width: 20px;
+}
+
+
+footer {
+  background: #deb887;
+  color: #232323;
+  margin-top: 2rem;
+  width: 100%;
+  z-index: 3;
+  bottom: 0;
+}
+
+/* Styles for the large footer containing the logo and title */
+.lgfooter {
+  display: flex;
+  align-items: center;
+  background: #deb887;
+  color: #232323;
+  margin-left: 4rem;
+  padding-top: 40px;
+}
+.lgfooter img {
+  width: 24px;
+  height: 27px;
+}
+
+/* Add a horizontal line below the large footer */
+footer hr {
+  border: 1px solid #232323;
+  width: 1150px;
+  margin-left: 4rem;
+}
+
+/* Styles for the footer columns */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Styles for each of the three columns */
+.ebook,
+.link,
+.callwe {
+  flex-basis: 60%;
+  background: #deb887;
+  color: #232323;
+  text-align: justify;
+  margin-left: 4rem;
+}
+
+/* Adjust styles for the content within each column */
+.ebook h3,
+.callwe h3 {
+  font-size: 24px;
+}
+.link h4 {
+  margin-bottom: 7rem;
+  font-size: 24px;
+}
+.callwe {
+  margin-bottom: 0.5rem;
+}
+.callwe p {
+  margin-top: 1rem;
+}
+.bottom-copies {
+  text-align: center;
+  background-color: #ffcd8d;
+  padding: 2px;
+  font-size: 20px;
+  border-radius: 30px;
+}

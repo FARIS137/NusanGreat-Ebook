@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #deb887;
+}
+
+.menu-malasngoding {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #deb887;
+  margin-top: 1rem;
+}
+
+.menu-malasngoding ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-right: 9rem;
+}
+
+.menu-malasngoding > ul > li {
+  float: left;
+}
+.logo {
+  align-items: center;
+  height: 30px;
+  border-radius: 15px;
+  background: linear-gradient(180deg, #deb887 0%, rgba(217, 217, 217, 0) 100%);
+  margin-left: 6rem;
+}
+
+.menu-malasngoding li a {
+  display: inline-block;
+  font-family: poppins;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  align-items: center;
+}
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown:hover .isi-dropdown {
+  display: block;
+}
+
+.isi-dropdown a:hover {
+  color: #fff !important;
+}
+
+.isi-dropdown {
+  position: absolute;
+  display: none;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+  background-color: #f9f9f9;
+}
+
+.isi-dropdown a {
+  color: #3c3c3c !important;
+}
+
+.isi-dropdown a:hover {
+  color: #232323 !important;
+  background: #f3f3f3 !important;
+}
+
+.menu-malasngoding .logo-container {
+  display: flex;
+  align-items: center; /* Vertically center the logo */
+}
+
+/* Adjust the logo's margin to push it to the center */
+.menu-malasngoding .logo {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+.menu-malasngoding .logo img {
+  width: 60px;
+  height: 30px;
+  border-radius: 15px;
+  align-items: center;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  margin-top: 5rem;
+}
+.right h1 {
+  text-align: center;
+  margin-right: 12rem;
+  font-family: Poppins;
+  font-size: 28px;
+  margin-left: 2.5rem;
+  text-align: justify;
+}
+.right p {
+  margin-right: 8em;
+  font-size: 1.44rem;
+  margin-left: 2.5rem;
+}
+
+.left img {
+  width: 380px;
+  height: 450px;
+  border-radius: 25px;
+  margin-left: 10rem;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
+.visi {
+  margin-left: 12rem; /* Adjust margin for both sides */
+}
+
+.misi {
+  margin-right: 12rem; /* Adjust margin for both sides */
+  margin-left: 2rem;
+}
+
+footer {
+  background: #deb887;
+  color: #232323;
+  margin-top: 2rem;
+}
+
+/* Styles for the large footer containing the logo and title */
+.lgfooter {
+  display: flex;
+  align-items: center;
+  background: #deb887;
+  color: #232323;
+  margin-left: 4rem;
+  padding-top: 40px;
+}
+.lgfooter img {
+  width: 24px;
+  height: 27px;
+}
+
+/* Add a horizontal line below the large footer */
+footer hr {
+  border: 1px solid #232323;
+  width: 1150px;
+}
+
+/* Styles for the footer columns */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Styles for each of the three columns */
+.ebook,
+.link,
+.callwe {
+  flex-basis: 60%;
+  background: #deb887;
+  color: #232323;
+  text-align: justify;
+  margin-left: 4rem;
+}
+
+/* Adjust styles for the content within each column */
+.ebook h3,
+.link h4,
+.callwe h3 {
+  font-size: 24px;
+}
+
+.bottom-copies {
+  text-align: center;
+  background-color: #ffcd8d;
+  padding: 2px;
+  font-size: 20px;
+  border-radius: 30px;
+}

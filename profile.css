@@ -1,0 +1,131 @@
+/* Gaya untuk elemen judul h5 */
+.profil h5 {
+  color: #000000;
+  text-align: left;
+  font: 600 24px "Inter", sans-serif;
+  position: absolute;
+  left: 600px;
+  top: 167px;
+}
+
+/* Gaya untuk elemen judul h6 */
+.profil h6 {
+  color: #000000;
+  text-align: left;
+  font: 600 24px "Inter", sans-serif;
+  position: absolute;
+  left: 350px;
+  top: 150px;
+}
+
+/* Gaya untuk elemen daftar (li) */
+.profil li {
+  font-size: 30px;
+  width: 50px;
+  text-align: left;
+  position: absolute;
+  left: 1050px;
+  top: 88px;
+  list-style-type: none;
+  background-color: #deb887;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* Gaya untuk elemen span */
+.profil span {
+  color: #000000;
+  text-align: left;
+  font: 600 24px "Inter", sans-serif;
+  position: absolute;
+  left: 350px;
+  top: 120px;
+}
+
+/* Gaya untuk gambar profil */
+/* profil img {
+  border-radius: 100%;
+  border: 5px solid rgb(6, 5, 5);
+  height: 200px;
+  width: 200px;
+}. */
+
+/* Gaya untuk div profil */
+.profil {
+  padding: 80px;
+}
+
+/* Gaya untuk kotak (box) */
+.box {
+  background-color: #deb887;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  max-width: 1030px;
+  margin: 20px auto;
+}
+
+/* Gaya untuk ikon dalam kotak */
+.box i {
+  padding-left: 80px;
+}
+
+/* Gaya untuk gambar dalam kotak */
+.box img {
+  width: 152px;
+  height: 219px;
+  position: relative;
+  padding: 5px;
+}
+
+/* Gaya untuk kotak1 (box1) */
+.box1 {
+  max-width: 1010px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #deb887;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Gaya untuk ikon dalam kotak1 */
+.box1 i {
+  padding-left: 70px;
+}
+
+/* Gaya untuk elemen gambar (img) */
+.img {
+  width: 10px;
+  color: #000000;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  gap: 5px;
+  padding: 80px;
+}
+
+/* Gaya untuk gambar dalam elemen gambar (img) */
+.img img {
+  width: auto;
+  height: 200px;
+  left: 50px;
+}
+
+/* Gaya untuk div ter */
+.ter {
+  background-image: linear-gradient(#ffcd8d, white);
+  max-width: 1010px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Gaya untuk footer */
+footer {
+  background-color: #ffcd8d;
+  color: rgb(0, 0, 0);
+  padding: 2px;
+  text-align: center;
+  max-width: 1050px;
+  margin: 20px auto;
+}

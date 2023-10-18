@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500");
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.sidebar {
+  position: fixed;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #deb887;
+  transition: all 0.5s ease;
+}
+.sidebar header {
+  font-size: 22px;
+  color: white;
+  line-height: 70px;
+  text-align: center;
+  background: #deb887;
+  user-select: none;
+}
+.sidebar ul a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #deb887;
+  border-top: 1px solid #deb887;
+  transition: 0.4s;
+}
+ul li:hover a {
+  padding-left: 50px;
+}
+.sidebar ul a i {
+  margin-right: 16px;
+}
+#check {
+  display: none;
+}
+label #btn,
+label #cancel {
+  position: absolute;
+  background: #deb887;
+  border-radius: 3px;
+  cursor: pointer;
+}
+label #btn {
+  left: 40px;
+  top: 17px;
+  font-size: 15px;
+  color: white;
+  padding: 6px 12px;
+  transition: all 0.5s;
+}
+label #cancel {
+  z-index: 1111;
+  left: -195px;
+  top: 17px;
+  font-size: 30px;
+  color: #0a5275;
+  padding: 4px 9px;
+  transition: all 0.5s ease;
+}
+#check:checked ~ .sidebar {
+  left: 0;
+}
+#check:checked ~ label #btn {
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+#check:checked ~ label #cancel {
+  left: 195px;
+}
+#check:checked ~ section {
+  margin-left: 250px;
+}
+/* CSS untuk submenu */
+.sidebar ul .submenu {
+  display: none;
+  background-color: #deb887;
+  top: 0;
+  left: 100%;
+  width: 200px;
+  z-index: 1;
+}
+
+.sidebar ul .submenu li {
+  border-top: none;
+}
+
+.sidebar ul .submenu li a {
+  padding-left: 40px;
+  border-bottom: none;
+}
+
+.sidebar ul li:hover .submenu {
+  display: block;
+}
+
+section {
+  background: url(bg.jpeg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  transition: all 0.5s;
+}
+
+.header {
+  padding: 10px 0;
+}
+
+/* CSS untuk menu */
+.menu {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  list-style-type: none;
+  margin-left: 16rem;
+}
+
+/* CSS untuk setiap elemen menu */
+.menu li {
+  margin-right: 20px;
+}
+
+/* CSS untuk search box */
+.search-box {
+  align-items: center;
+  background-color: #deb887;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.search-box input[type="text"] {
+  border: none;
+  background-color: transparent;
+  color: white;
+  padding: 5px;
+  width: 250px;
+}
+
+.search-box button {
+  background: transparent;
+  border: none;
+  color: #deb887;
+  cursor: pointer;
+}
+
+.search-box button i.fa-search {
+  color: black;
+  font-size: 13px;
+  transition: color 0.3s;
+}
+
+.search-box button:hover i.fa-search {
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to top, white 25%, #deb887);
+  width: 201px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 0 10px; /* Menambahkan padding untuk merapikan tampilan */
+}
+
+.logo img {
+  margin-right: 10px; /* Menambahkan margin kanan antara gambar dan teks */
+  width: 30px;
+  height: 30px; /* Sesuaikan ukuran gambar dengan tinggi logo */
+}
+
+.logo1 {
+  display: flex;
+  align-items: center;
+  background: #deb887;
+  width: 80 px;
+  height: 30px;
+  border-radius: 15px;
+  padding: 0 10px;
+}
+
+.logo h1 {
+  margin: 0;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  margin-left: 17rem;
+  margin-top: 2rem;
+  margin-right: 4rem;
+}
+
+.books {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Menampilkan 5 buku per baris */
+  grid-gap: 20px; /* Jarak antara buku-buku */
+  background-color: #fff6ea;
+}
+
+.book {
+  flex-basis: 20%; /* Setiap buku akan mengambil 20% lebar dari wadahnya */
+  padding: 5px;
+  text-align: center;
+  box-sizing: border-box; /* Memastikan padding tidak mempengaruhi lebar buku */
+}
+
+.book img {
+  width: 158px;
+  height: 284px;
+}
+
+h3 {
+  font-size: 1rem;
+  margin: 10px 0;
+  color: #000;
+}
+
+p {
+  font-size: 1rem;
+}
+footer {
+  background: #deb887;
+  color: #232323;
+  margin-top: 2rem;
+}
+
+/* Styles for the large footer containing the logo and title */
+.lgfooter {
+  display: flex;
+  align-items: center;
+  background: #deb887;
+  color: #232323;
+  margin-left: 4rem;
+  padding-top: 3rem;
+}
+.lgfooter img {
+  width: 24px;
+  height: 27px;
+}
+
+/* Add a horizontal line below the large footer */
+footer hr {
+  border: 1px solid #232323;
+  width: 1150px;
+  margin-left: 4rem;
+}
+
+/* Styles for the footer columns */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Styles for each of the three columns */
+.ebook,
+.link,
+.callwe {
+  flex-basis: 60%;
+  background: #deb887;
+  color: #232323;
+  text-align: justify;
+  margin-left: 4rem;
+}
+
+/* Adjust styles for the content within each column */
+.ebook h3,
+.callwe h3 {
+  font-size: 24px;
+}
+.link h4 {
+  margin-bottom: 7rem;
+  font-size: 24px;
+}
+.callwe  {
+  margin-bottom:0.5rem;
+}
+.callwe p {
+  margin-top: 1rem;
+}
+.bottom-copies {
+  text-align: center;
+  background-color: #ffcd8d;
+  padding: 2px;
+  font-size: 20px;
+  border-radius: 30px;
+  margin-top: 1rem;
+}

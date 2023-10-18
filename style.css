@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.transaction-container {
+  display: flex;
+  background-color: #f3f3f3;
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+.transaction-container p {
+  padding: 5px;
+}
+
+.left-column,
+.right-column {
+  flex: 1;
+  padding: 20px;
+}
+.right-column {
+  flex: 1;
+  padding: 20px;
+  text-align: right;
+}
+
+.transaction-details {
+  margin-bottom: 20px;
+}
+.transaction-details button {
+  height: 40px;
+  width: 200px;
+  border-radius: 30px;
+  background: #0d99e8;
+}
+.button {
+  height: 40px;
+  width: 300px;
+  border-radius: 30px;
+  background: #0d99e8;
+  margin-right: 15rem;
+}

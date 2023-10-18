@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perahu Kertas</title>
+    <link rel="stylesheet" href="../detail.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <input type="checkbox" id="check" />
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+      <ul>
+        <header>App</header>
+        <li>
+          <a href="../index1.html"><i class="fas fa-home"></i>Halaman Utama</a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-fire"></i>Popular</a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-book"></i>Buku</a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-list"></i>Kategori</a>
+          <ul class="submenu">
+            <li><a href="../../../Kategori/pendidikan.html">Pendidikan</a></li>
+            <li><a href="../../../Kategori/novel.html">Novel</a></li>
+            <li><a href="../../../Kategori/cerpen.html">Cerpen</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="../../pembayaran.html"
+            ><i class="fas fa-donate"></i>Donasi</a
+          >
+        </li>
+
+        <li>
+          <a href="../../index.html"
+            ><i class="fas fa-sign-out-alt"></i>Keluar</a
+          >
+        </li>
+      </ul>
+    </div>
+    <header class="header">
+      <ul class="menu">
+        <li class="logo">
+          <img src="../../../Image/icon.png" lt="Logo" width="30px" />E-book of
+          Education
+        </li>
+        <li class="search-box">
+          <input type="text" placeholder="Cari..." />
+          <button><i class="fas fa-search"></i></button>
+        </li>
+        <li class="buku">
+          <a href="#"><img src="../../../Image/book.png" width="40px" /></a>
+        </li>
+        <li class="clock">
+          <span id="time"></span>
+        </li>
+        <li class="logo1">
+          <img src="../../../Image/Vector.png" width="17px" />Aplikasi
+        </li>
+        <li class="profile">
+          <a href="../../../profile.html"
+            ><img src="../../../Image/profile.png" width="40px"
+          /></a>
+        </li>
+      </ul>
+    </header>
+    <div class="container">
+      <img src="../../../Image/novel/novel1.jpg" alt="Book 1" />
+      <div class="isi">
+        <div class="arrow">
+          <h4>Perahu kertas</h4>
+          <a href="../../../Kategori/novel.html" style="color: black"
+            ><i class="fa fa-arrow-left"></i
+          ></a>
+        </div>
+        <div class="sinopsis">
+          <h5>Penulis : Dewi Lestari</h5>
+          <h5>ISBN : 978-979-1227-78-0</h5>
+          <h5>Ukuran : viii, 456, Uk: 15.5×23 cm</h5>
+          <h5>Cetakan : 2009</h5>
+          <h4>Sinopsis :</h4>
+          <p>
+            Perahu Kertas bercerita tentang dua orang yang sama-sama unik
+            bernama Kugy dan Keenan. Kugy adalah seorang mahasiswi Sastra
+            berkepribadian nyentrik yang bercita-cita menjadi juru dongeng.
+            Keenan adalah seorang laki-laki kalem yang cinta melukis, namun
+            harus kuliah Ekonomi karena mengikuti keinginan ayahnya.
+          </p>
+        </div>
+
+        <div class="icons">
+          <a href="#" style="color: black"><i class="fa fa-eye">3000</i></a>
+          <a href="#" style="color: black"
+            ><i class="fa fa-thumbs-up">2300</i></a
+          >
+        </div>
+        <div class="star">
+          <a href="#" style="color: black"><i class="fa fa-star"></i></a>
+          <a href="#" style="color: black"><i class="fa fa-star"></i></a>
+          <a href="#" style="color: black"><i class="fa fa-star"></i></a>
+          <a href="#" style="color: black"><i class="fa fa-star"></i></a>
+          <a href="#" style="color: black"><i class="fa fa-star"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="footerlg">
+        <h4>Mulai Baca</h4>
+        <h4>Favorit</h4>
+        <h4>Berbagi</h4>
+      </div>
+      <div class="lgbotom">
+        <a
+          href="https://repository.bbg.ac.id/bitstream/513/1/Perahu_Kertas.pdf"
+          target="_blank"
+          style="color: black"
+          ><i class="fa fa-book-open"></i
+        ></a>
+        <a href="#" style="color: black"><i class="fa fa-heart"></i></a>
+        <a href="#" style="color: black"><i class="fa fa-share"></i></a>
+      </div>
+    </div>
+    <hr />
+    <div class="containers">
+      <div class="head"><h1>Post A Comment</h1></div>
+      <div><span id="comment">0</span>Comments</div>
+      <div class="text"><p>We are happy to hear from you</p></div>
+      <div class="comments"></div>
+      <div class="commentbox">
+        <img src="../../../Image/user.jpg" alt="" />
+        <div class="content">
+          <h2>Comment as :</h2>
+          <input type="text" value="Anonymous" class="user" />
+
+          <div class="commentinput">
+            <input
+              type="text"
+              placeholder="Enter comment"
+              class="usercomment"
+            />
+            <div class="buttons">
+              <button type="submit" disabled id="publish">Publish</button>
+              <div class="notify">
+                <input type="checkbox" class="notifyinput" /><span
+                  >Notify me</span
+                >
+              </div>
+            </div>
+          </div>
+          <p>
+            This site is proctected by reCAPTCHA and the google
+            <a href="">Privacy policy</a> and
+            <a href="">Terms of Service</a> apply.
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="lgfooter">
+        <img src="../../../Image/icon.png" alt="Logo" />
+        E-book of Education
+      </div>
+      <hr />
+      <div class="footer">
+        <div class="ebook">
+          <h3>E-book</h3>
+          <p>
+            Web platform inovatif yang dirancang khusus untuk membantu siswa dan
+            mahasiswa yang kesulitan ekonomi dalam membeli buku fisik.Kami
+            bertujuan untuk mengubah buku menjadiformat digital yang dapat
+            diakses dengan mudah dan bebas dipakai oleh semua pengguna.
+          </p>
+        </div>
+        <div class="link">
+          <h4>link Terkait</h4>
+        </div>
+        <div class="callwe">
+          <h3>Hubungi kami</h3>
+          <p>Phone : +62 859-6639-0424</p>
+          <p>Email : NusanGreat1@gmail.com</p>
+          <p>Address : pondok gede permai, jakarta</p>
+        </div>
+      </div>
+      <div class="bottom-copies">
+        <p class="copy-footer-29">
+          Copyright © E-bookOfEducation. All Rights Reserved23
+        </p>
+      </div>
+    </footer>
+    <script>
+      function updateTime() {
+        const timeElement = document.getElementById("time");
+        const now = new Date();
+        const hours = now.getHours().toString().padStart(2, "0");
+        const minutes = now.getMinutes().toString().padStart(2, "0");
+        const timeString = `${hours}:${minutes}`;
+        timeElement.textContent = timeString;
+      }
+      setInterval(updateTime, 1000);
+
+      ("use strict");
+
+      const userId = {
+        name: null,
+        identity: null,
+        image: null,
+        message: null,
+        date: null,
+      };
+
+      const userComment = document.querySelector(".usercomment");
+      const publishBtn = document.querySelector("#publish");
+      const comments = document.querySelector(".comments");
+      const userName = document.querySelector(".user");
+
+      userComment.addEventListener("input", (e) => {
+        if (!userComment.value) {
+          publishBtn.setAttribute("disabled", "disabled");
+          publishBtn.classList.remove("abled");
+        } else {
+          publishBtn.removeAttribute("disabled");
+          publishBtn.classList.add("abled");
+        }
+      });
+
+      function addPost() {
+        if (!userComment.value) return;
+        userId.name = userName.value;
+        if (userId.name === "Anonymous") {
+          userId.identity = false;
+          userId.image = "anonymous.png";
+        } else {
+          userId.identity = true;
+          userId.image = "ProfilePic.png";
+        }
+        userId.message = userComment.value;
+        userId.date = new Date().toLocaleString();
+        let published = 
+        `<div class="parents">
+        <img src="ProfilePic.png">
+        <div>
+          <h1>${userId.name}</h1>
+          <p>${userId.message}</p>
+          <div class="engagements"><img src="like.png" ><img src="share.png"></div>
+          <span class="date">${userId.date}</span>
+        </div>
+      </div>`;
+
+        comments.innerHTML += published;
+        userComment.value = "";
+
+        let commentsNum = document.querySelectorAll(".parents").length;
+        document.getElementById("comment").textContent = commentsNum;
+      }
+
+      publishBtn.addEventListener("click", addPost);
+    </script>
+  </body>
+</html>
